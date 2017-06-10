@@ -1,0 +1,8 @@
+1、在D盘中先创建worksapce文件夹
+2、把服务器搭建压缩包也放到D盘，然后解压
+3、继续解压msvcr110.zip，把解压出的msvcr110.dll文件，放到windows System32 下
+4、打开终端d:
+5、cd Apache24
+6、cd bin
+7、httpd -k install
+8、httpd -k start

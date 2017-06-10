@@ -1,0 +1,53 @@
+安装git
+
+要想在cmd中使用git 需要配置环境变量
+找到安装路径 复制下来 如 ;C:\Program Files (x86)\Git\cmd 然后在计算机属性高级系统设置 里面配置path后面添加 注意以分号的形式 后面加上
+\cmd
+
+
+1、git init 初始化一个本地仓储 实际上就是在本地的仓库中添加一个文件夹，目的是记录所有的项目信息
+
+2、git status  用来查看本地仓储的状态 第一次查看 里面显示的是没有被跟踪的文件
+git status -s //-s输出简要的变更日志
+
+3、git add     .点代表当前目录 git add 可以将一个没有被跟踪的文件添加到跟踪里去 git add +文件名 
+如果不想被跟踪 在本地文件夹中 添加 .gitignore 在文件中书写不想被托管的文件 如果是根目录中的文件要用
+/+文件名 这样只忽略根目录下的那个文件夹
+git add . === git add --all
+
+4、git commit 将本地的变化提交到仓库文件夹中归档 
+git commit -m '第一次提交本地仓库'   -m后面追加的是版本信息
+
+5、提交后 让后再次 输入git status 会发现出现 nothing to commit, working directory clean 说明提交完毕
+6、然后修改本地代码后 再次输入 git status -s 会出现m ：开头的 表示modified修改的文本 删除文件的话会出现d delete的意思
+
+7、使用 git diff 可以查到修改的内容
+
+8、接着使用 git add --all 跟踪文件 再使用git commit -m"说明信息" 提交文件
+
+9、git log 查看提交日志
+
+10、git reset --hard +6位commit的值 回到你所想要的版本
+
+
+
+
+11、git remote add origin +地址 添加地址到远端 第一次提交需要添加地址
+
+12 git push -u origin master 然后输入账户名和密码
+
+13 git pull origin master  从网站上下载更改的内容
+
+
+14 git branch 查看分支
+
+15 git branch +文件名 想要创建的分支
+
+16 git checkout +分支名 可以切换分支
+17 git push -u origin +分支名 提交分支代码
+
+
+
+
+
+ 
